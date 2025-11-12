@@ -47,18 +47,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        neural: {
-          teal: "hsl(var(--neural-teal))",
-          cyan: "hsl(var(--neural-cyan))",
-          violet: "hsl(var(--neural-violet))",
-          indigo: "hsl(var(--neural-indigo))",
-          purple: "hsl(var(--neural-purple))",
-        },
+        "neural-cyan": "hsl(var(--neural-cyan))",
+        "neural-violet": "hsl(var(--neural-violet))",
+        "neural-emerald": "hsl(var(--neural-emerald))",
+        "neural-indigo": "hsl(var(--neural-indigo))",
       },
       backgroundImage: {
         'gradient-neural': 'var(--gradient-neural)',
         'gradient-wave': 'var(--gradient-wave)',
         'gradient-glow': 'var(--gradient-glow)',
+        'gradient-aurora': 'var(--gradient-aurora)',
       },
       boxShadow: {
         'glow': 'var(--shadow-glow)',

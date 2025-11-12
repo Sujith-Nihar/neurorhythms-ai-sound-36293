@@ -13,7 +13,7 @@ const Music = () => {
       
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold mb-4">
+          <h1 className="text-5xl font-bold mb-4 bg-gradient-neural bg-clip-text text-transparent">
             Music Library
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -27,12 +27,29 @@ const Music = () => {
               key={track.id}
               track={track}
               onPlay={setCurrentTrack}
+              isPlaying={currentTrack?.id === track.id}
             />
           ))}
         </div>
+
+        <div className="mt-16 max-w-3xl mx-auto">
+          <div className="bg-card/30 backdrop-blur-sm border border-border/40 rounded-2xl p-6">
+            <h3 className="text-lg font-semibold mb-3 text-primary">💡 How to Listen</h3>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li>• Use headphones for the best experience</li>
+              <li>• Set volume to a comfortable level (around 50-70%)</li>
+              <li>• No autoplay — tracks start only when you press play</li>
+              <li>• Use loop mode for extended sessions</li>
+            </ul>
+          </div>
+        </div>
       </div>
       
-      <AudioPlayer track={currentTrack} onClose={() => setCurrentTrack(null)} />
+      <AudioPlayer 
+        track={currentTrack} 
+        onClose={() => setCurrentTrack(null)} 
+        onTrackChange={setCurrentTrack}
+      />
     </div>
   );
 };

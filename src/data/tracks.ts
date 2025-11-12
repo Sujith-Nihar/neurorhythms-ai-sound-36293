@@ -13,41 +13,41 @@ export const tracks: Track[] = [
   {
     id: "focus",
     title: "Deep Focus",
-    description: "Synchronize brain activity for sustained attention with alpha-beta boundary modulation",
+    description: "10 Hz alpha–beta modulation • 108 BPM • streamlined texture",
     bpm: 108,
     frequency: "10 Hz (Alpha-Beta)",
     brainState: "Focused Attention",
-    audioUrl: "/audio/deep_focus.mp3",
-    color: "neural-teal"
+    audioUrl: "/audio/Deep_Focus.mp3",
+    color: "neural-cyan"
   },
   {
     id: "relax",
-    title: "Relaxing",
-    description: "Reduce stress and stabilize parasympathetic response with low-alpha rhythms",
+    title: "Relaxing (Stress Relief)",
+    description: "8 Hz low-alpha • 62 BPM (6/8) • calm alertness",
     bpm: 62,
     frequency: "8 Hz (Low Alpha)",
     brainState: "Calm & Relaxed",
-    audioUrl: "/audio/relaxing.mp3",
-    color: "neural-cyan"
+    audioUrl: "/audio/Stress_Relief.mp3",
+    color: "neural-violet"
   },
   {
     id: "sleep",
     title: "Deep Sleep",
-    description: "Support slow-wave sleep onset with theta-range modulation and ambient soundscapes",
+    description: "5 Hz theta • 48 BPM (3/4) • long tails, no sharp transients",
     bpm: 48,
     frequency: "5 Hz (Theta)",
     brainState: "Deep Sleep",
-    audioUrl: "/audio/deep_sleep.mp3",
-    color: "neural-violet"
+    audioUrl: "/audio/Deep_Sleep.mp3",
+    color: "neural-emerald"
   },
   {
     id: "motivation",
     title: "Motivation for Work",
-    description: "Enhance alertness and dopamine engagement with beta rhythm emphasis",
+    description: "12–14 Hz beta • ~120 BPM • energetic yet clean",
     bpm: 120,
     frequency: "12-14 Hz (Beta)",
     brainState: "Motivated & Alert",
-    audioUrl: "/audio/motivation.mp3",
-    color: "neural-purple"
+    audioUrl: "/audio/Motivation_1.mp3",
+    color: "neural-violet"
   }
 ];
