@@ -121,13 +121,20 @@ const Science = () => {
       <NeuralBackground />
       
       <div className="container mx-auto px-4 py-12">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-4">
-            The Science Behind NeuroRhythms
+        <div className="text-center mb-12 animate-fade-in">
+          <h1 className="text-5xl font-bold mb-4 bg-gradient-neural bg-clip-text text-transparent">
+            The Science
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Every track is backed by peer-reviewed neuroscience research. 
             Explore the scientific foundations of brainwave entrainment and functional music.
+          </p>
+        </div>
+        
+        {/* Earphone tip */}
+        <div className="mb-12 max-w-2xl mx-auto bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-xl p-4 animate-fade-in">
+          <p className="text-center text-sm">
+            <span className="text-primary font-semibold">🎧 Pro Tip:</span> Use earphones for best experience — our tracks use stereo separation for optimal brainwave entrainment
           </p>
         </div>
         

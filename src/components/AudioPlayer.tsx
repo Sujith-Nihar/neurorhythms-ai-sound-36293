@@ -102,7 +102,7 @@ const AudioPlayer = ({ track, onClose, onTrackChange, isPlaying, setIsPlaying }:
   if (!track) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-card/95 backdrop-blur-xl border-t border-border/40 p-4 z-40">
+    <div className="fixed bottom-0 left-0 right-0 bg-card/95 backdrop-blur-xl border-t border-border/40 p-4 z-40 animate-slide-in-bottom shadow-2xl">
       <audio
         ref={audioRef}
         onTimeUpdate={handleTimeUpdate}

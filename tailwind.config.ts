@@ -100,6 +100,14 @@ export default {
           "0%": { backgroundPosition: "-200% center" },
           "100%": { backgroundPosition: "200% center" },
         },
+        "slide-in-bottom": {
+          "0%": { transform: "translateY(100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -108,6 +116,8 @@ export default {
         "pulse-glow": "pulse-glow 3s ease-in-out infinite",
         "float": "float 6s ease-in-out infinite",
         "shimmer": "shimmer 3s linear infinite",
+        "slide-in-bottom": "slide-in-bottom 0.3s ease-out",
+        "fade-in": "fade-in 0.5s ease-out",
       },
     },
   },

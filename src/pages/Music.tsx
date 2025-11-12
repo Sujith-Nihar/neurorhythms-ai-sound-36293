@@ -37,10 +37,13 @@ const Music = () => {
         </div>
 
         <div className="mt-16 max-w-3xl mx-auto">
-          <div className="bg-card/30 backdrop-blur-sm border border-border/40 rounded-2xl p-6">
+          <div className="bg-card/30 backdrop-blur-sm border border-border/40 rounded-2xl p-6 animate-fade-in">
             <h3 className="text-lg font-semibold mb-3 text-primary">💡 How to Listen</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>• Use headphones for the best experience</li>
+              <li className="flex items-center gap-2">
+                <span className="text-primary">🎧</span>
+                <span><strong>Use earphones for best experience</strong> — stereo separation enhances brainwave entrainment</span>
+              </li>
               <li>• Set volume to a comfortable level (around 50-70%)</li>
               <li>• No autoplay — tracks start only when you press play</li>
               <li>• Use loop mode for extended sessions</li>
