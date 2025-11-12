@@ -6,6 +6,7 @@ import { tracks, Track } from "@/data/tracks";
 
 const Music = () => {
   const [currentTrack, setCurrentTrack] = useState<Track | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   return (
     <div className="relative pb-32">
@@ -26,8 +27,11 @@ const Music = () => {
             <TrackCard
               key={track.id}
               track={track}
-              onPlay={setCurrentTrack}
-              isPlaying={currentTrack?.id === track.id}
+              onPlay={(track) => {
+                setCurrentTrack(track);
+                setIsPlaying(true);
+              }}
+              isPlaying={currentTrack?.id === track.id && isPlaying}
             />
           ))}
         </div>
@@ -49,6 +53,8 @@ const Music = () => {
         track={currentTrack} 
         onClose={() => setCurrentTrack(null)} 
         onTrackChange={setCurrentTrack}
+        isPlaying={isPlaying}
+        setIsPlaying={setIsPlaying}
       />
     </div>
   );

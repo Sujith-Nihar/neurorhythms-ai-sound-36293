@@ -10,6 +10,7 @@ import { tracks, Track } from "@/data/tracks";
 const Science = () => {
   const location = useLocation();
   const [currentTrack, setCurrentTrack] = useState<Track | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
   
   useEffect(() => {
     if (location.hash) {
@@ -148,7 +149,10 @@ const Science = () => {
                     </p>
                     {track && (
                       <Button
-                        onClick={() => setCurrentTrack(track)}
+                        onClick={() => {
+                          setCurrentTrack(track);
+                          setIsPlaying(true);
+                        }}
                         className="gap-2 bg-primary/90 hover:bg-primary shadow-lg shadow-primary/20"
                       >
                         <Play className="w-4 h-4" />
@@ -191,6 +195,8 @@ const Science = () => {
         track={currentTrack} 
         onClose={() => setCurrentTrack(null)} 
         onTrackChange={setCurrentTrack}
+        isPlaying={isPlaying}
+        setIsPlaying={setIsPlaying}
       />
     </div>
   );

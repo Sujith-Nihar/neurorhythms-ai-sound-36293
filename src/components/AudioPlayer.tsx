@@ -9,10 +9,11 @@ interface AudioPlayerProps {
   track: Track | null;
   onClose: () => void;
   onTrackChange?: (track: Track) => void;
+  isPlaying: boolean;
+  setIsPlaying: (isPlaying: boolean) => void;
 }
 
-const AudioPlayer = ({ track, onClose, onTrackChange }: AudioPlayerProps) => {
-  const [isPlaying, setIsPlaying] = useState(false);
+const AudioPlayer = ({ track, onClose, onTrackChange, isPlaying, setIsPlaying }: AudioPlayerProps) => {
   const [volume, setVolume] = useState(0.7);
   const [isMuted, setIsMuted] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
